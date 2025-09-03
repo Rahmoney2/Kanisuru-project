@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Services - KANISURU</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    :root {
+      --primary-color: #c19a6b;
+      --secondary-color: #8b6f47;
+      --accent-color: #d4af37;
+      --dark-color: #222;
+      --light-color: #f9f4ef;
+    }
+
+    body {
+      font-family: 'Times New Roman', Times, serif, Arial, sans-serif;
+      background: var(--light-color);
+      color: var(--dark-color);
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Navbar */
+    .navbar {
+      background: var(--dark-color) !important;
+    }
+    .navbar-brand img {
+      height: 50px;
+      margin-right: 10px;
+    }
+    .navbar-brand span {
+      color: var(--accent-color);
+      font-weight: bold;
+      font-size: 1rem;
+    }
+    .nav-link {
+      color: var(--light-color) !important;
+    }
+    .nav-link:hover {
+      color: var(--accent-color) !important;
+    }
+
+    /* Custom Hamburger */
+    .custom-toggler {
+      border: none;
+      background: transparent;
+      padding: 5px;
+      outline: none;
+    }
+    .toggler-icon {
+      display: block;
+      width: 28px;
+      height: 3px;
+      margin: 6px auto;
+      background-color: #d4af37;
+      transition: all 0.4s ease;
+    }
+    .custom-toggler.active .toggler-icon:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 5px);
+    }
+    .custom-toggler.active .toggler-icon:nth-child(2) {
+      opacity: 0;
+    }
+    .custom-toggler.active .toggler-icon:nth-child(3) {
+      transform: rotate(-45deg) translate(6px, -6px);
+    }
+
+    /* Hero */
+    .services-hero {
+      background: linear-gradient(rgba(34,34,34,0.6), rgba(34,34,34,0.6)),
+                  url(./images/extracvator\ 1.jpg)
+                  no-repeat center/cover;
+      color: #fff;
+      text-align: center;
+      padding: 120px 20px;
+    }
+    .services-hero h1 {
+      font-size: 3rem;
+      font-weight: bold;
+      color: var(--accent-color);
+    }
+
+    /* Services Section */
+    .services-section {
+      padding: 60px 20px;
+    }
+    .service-card {
+      background: #fff;
+      border: 1px solid #eee;
+      border-radius: 10px;
+      padding: 30px;
+      text-align: center;
+      transition: all 0.3s ease-in-out;
+      box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+      height: 100%;
+    }
+    .service-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
+    }
+    .service-card img {
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      width: 100%;
+    }
+    .service-card h3 {
+      color: var(--primary-color);
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+    .service-card p {
+      color: var(--secondary-color);
+      font-size: 1rem;
+    }
+
+    /* Footer */
+    footer {
+      background: var(--dark-color);
+      color: var(--light-color);
+      padding: 40px 0;
+    }
+    footer a {
+      color: var(--accent-color);
+      text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+   <!-- Navbar -->
+   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-sm">
+     <div class="container">
+       <a class="navbar-brand d-flex align-items-center" href="#home">
+         <img src="./images/kanisuru.jpg" alt="KANISURU Logo"> 
+         <span>KANISURU<br>SUPPLIERS</span>
+       </a>
+       
+       <!-- Animated Hamburger -->
+       <button class="navbar-toggler custom-toggler" type="button" 
+               data-bs-toggle="collapse" data-bs-target="#navbarNav"
+               aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="toggler-icon"></span>
+         <span class="toggler-icon"></span>
+         <span class="toggler-icon"></span>
+       </button>
+
+       <div class="collapse navbar-collapse" id="navbarNav">
+         <ul class="navbar-nav ms-auto">
+           <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+           <li class="nav-item"><a class="nav-link" href="abt.html">About</a></li>
+           <li class="nav-item"><a class="nav-link active" href="Service.html">Services</a></li>
+           <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+         </ul>
+       </div>
+     </div>
+   </nav>
+
+  <!-- Hero -->
+  <section class="services-hero">
+    <div class="container">
+      <h1>Our Services</h1>
+      <p>Delivering top-quality building materials and solutions for every project</p>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="services-section">
+    <div class="container">
+      <div class="row g-4">
+        <!-- Service 1 -->
+        <div class="col-md-4">
+          <div class="service-card">
+            <img src="./images/filling sands.jpg" alt="Sands" class="img-fluid">
+            <h3>Quality Sands</h3>
+            <p>Supplying premium plastering, sharp, and filling sands for construction and finishing works.</p>
+          </div>
+        </div>
+        <!-- Service 2 -->
+        <div class="col-md-4">
+          <div class="service-card">
+            <img src="./images/stones.jpg" alt="Stones" class="img-fluid">
+            <h3>Durable Stones</h3>
+            <p>Providing strong stones for building, road works, and heavy-duty construction projects.</p>
+          </div>
+        </div>
+        <!-- Service 3 -->
+        <div class="col-md-4">
+          <div class="service-card">
+            <img src="./images/grantee.jpg" alt="Granite" class="img-fluid">
+            <h3>High-Quality Granite</h3>
+            <p>Supplying granite of different sizes and textures to meet diverse construction needs.</p>
+          </div>
+        </div>
+        <!-- Service 4 -->
+        <div class="col-md-4">
+          <div class="service-card">
+            <img src="./images/Gravel Supply.jpg" alt="Gravel" class="img-fluid">
+            <h3>Gravel Supply</h3>
+            <p>Reliable gravel for road works, landscaping, and large-scale construction foundations.</p>
+          </div>
+        </div>
+        <!-- Service 5 -->
+        <div class="col-md-4">
+          <div class="service-card">
+            <img src="./images/trucks 1.jpg" alt="Truck Hire" class="img-fluid">
+            <h3>Truck Hire & Delivery</h3>
+            <p>Offering timely delivery of sands, stones, and granite with our fleet of heavy-duty trucks.</p>
+          </div>
+        </div>
+        <!-- Service 6 -->
+        <div class="col-md-4">
+          <div class="service-card">
+            <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=800&q=80" alt="Construction Consultancy" class="img-fluid">
+            <h3>Construction Consultancy</h3>
+            <p>Providing expert advice and consultancy to ensure successful and efficient building projects.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+   <footer>
+     <div class="container text-center">
+       <nav aria-label="Footer">
+         <p>
+           <a href="index.html">Home</a> | 
+           <a href="abt.html">About</a> | 
+           <a href="Service.html">Services</a> | 
+           <a href="contact.html">Contact</a>
+         </p>
+       </nav>
+       <p class="mb-2">&copy; 2025 KANISURU SUPPLIERS. All Rights Reserved.</p>
+     </div>
+   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+         // Navbar toggler animation
+         const toggler = document.querySelector('.custom-toggler');
+         if (toggler) {
+         toggler.addEventListener('click', () => {
+             toggler.classList.toggle('active');
+         });
+         }
+    </script>
+</body>
+</html>
